@@ -23,7 +23,7 @@ nav a:hover {
 
 main {
   background-color: var(--header);
-  min-height: 81rem;
+  min-height: 58rem;
 }
 .carouselcontainer {
   max-height: 40rem;
@@ -55,13 +55,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-footer {
-  background-color: #2f0094;
-  color: white;
-}
-/* .imgfooter {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-} */
 .formcontainer {
   display: flex;
   flex-direction: column;
@@ -150,9 +143,6 @@ td.empty-cell {
   padding: 1rem;
 }
 @media (min-width: 320px) and (max-width: 768px) {
-  main {
-    min-height: 140rem;
-  }
   .header,
   nav {
     flex-direction: column;
@@ -203,13 +193,13 @@ td.empty-cell {
   table {
     margin: 1rem 3rem;
   }
-  .divcontainer {
-    display: flex;
-    flex-direction: column;
-  }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    main {
-      min-height: 145rem;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .cont1section {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
     }
     .backgc {
       min-height: 120rem;
@@ -220,9 +210,8 @@ td.empty-cell {
     }
   }
   @media (min-width: 1024px) {
-    .backgc {
-      min-height: 120rem;
-      max-height: 120rem;
+    .cont1section {
+      justify-content: space-between;
     }
   }
 }
