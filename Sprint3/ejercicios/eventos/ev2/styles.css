@@ -1,0 +1,10 @@
+#sqr {
+  background-color: gray;
+  min-height: 10rem;
+  min-width: 15rem;
+}
+
+#btn {
+  min-width: 8rem;
+  min-height: 2rem;
+}

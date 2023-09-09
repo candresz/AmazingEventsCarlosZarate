@@ -1,0 +1,16 @@
+#sqr {
+  background-color: gray;
+  min-height: 25rem;
+  min-width: 15rem;
+}
+
+#btn {
+  min-width: 8rem;
+  min-height: 2rem;
+}
+
+#res {
+  background-color: gray;
+  min-height: 5rem;
+  min-width: 25rem;
+}
