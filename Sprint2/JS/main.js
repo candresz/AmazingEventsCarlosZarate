@@ -29,7 +29,7 @@ function cardTemplate(data) {
 //creating the cards
 function createCards(cardList) {
   //starting with empty string
-  let template = "";
+  let template = ""; // Acumulando
   //creating key value pairs for iterator and cardlist
   for (const iterator of cardList) {
     //adding the template to the card

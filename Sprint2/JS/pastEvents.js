@@ -1,8 +1,7 @@
 const cardsData = data.events;
-const objectDate = parseInt(data.currentDate.split("-").join(""));
+const objectDate = parseInt(data.currentDate.split("-").join("")); // Metodos
 
 // Template
-
 function cardsTemplate(data) {
   return `<div class="card p-1" style="width: 18rem">
     <img
@@ -27,14 +26,12 @@ function cardsTemplate(data) {
     </div>`;
 }
 
-//creating and filtering the cards
 function createCards(cardList) {
-  //starting with empty string
   let template = "";
-  //creating key value pairs for iterator and cardlist
+
   for (const iterator of cardList) {
     let dateToNumber = parseInt(iterator.date.split("-").join(""));
-    console.log(dateToNumber);
+
     if (dateToNumber < objectDate) {
       template += cardsTemplate(iterator);
     }
@@ -42,11 +39,9 @@ function createCards(cardList) {
   return template;
 }
 
-// Adding the template to the html
 function printCards(template, id) {
-  //select the area you want to print the card
   let container = document.getElementById(id);
-  //display the templates on the card
+
   container.innerHTML = template;
 }
 

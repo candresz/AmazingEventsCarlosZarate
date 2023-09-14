@@ -3,8 +3,10 @@ let parametro = location.search;
 let searchPa = new URLSearchParams(parametro);
 
 let idEvent = searchPa.get("parametro");
+console.log(typeof idEvent);
 
 let event = data.events.find((events) => events._id === idEvent);
+console.log(event);
 
 let containerCards = document.getElementById("details");
 

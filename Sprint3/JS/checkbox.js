@@ -5,8 +5,10 @@ const cardsContainer = document.getElementById("cardsCont");
 const searchBar = document.getElementById("searchBar");
 const searchBtn = document.getElementById("searchBtn");
 
+// Empty array
 const categories = [];
 
+// Filtering categories
 for (const iterator of dataEvents) {
   const keyCategory = iterator.category;
   if (!categories.includes(keyCategory)) {
@@ -14,6 +16,7 @@ for (const iterator of dataEvents) {
   }
 }
 
+// Checkboxes template
 function checkBox(categ) {
   let template = "";
   for (let i = 0; i < categ.length; i++) {
@@ -21,7 +24,7 @@ function checkBox(categ) {
     <input
       class="form-check-input"
       type="checkbox"
-      id="inlineCheckbox${[i]}"
+      id="inlineCheckbox${[i]}" 
       value="${categ[i]}"
     />
     <label class="form-check-label" for="inlineCheckbox${[i]}"

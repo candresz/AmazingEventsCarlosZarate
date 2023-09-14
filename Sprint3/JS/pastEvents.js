@@ -29,6 +29,7 @@ function cardTemplate(data) {
 
 /////////////
 function printingCards(array, container) {
+  console.log(array);
   if (array.length > 0) {
     let template = "";
     for (const iterator of array) {
